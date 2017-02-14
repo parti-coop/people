@@ -19,3 +19,18 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+
+public/uploads/*
+public/sitemaps/*
+dump.rdb
+
+app/assets/images/email/.DS_Store
+app/assets/images/.DS_Store
+
+app/assets/.DS_Store
+
+local_env.yml
+test_env.yml
+
+.DS_Store

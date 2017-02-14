@@ -1,0 +1,12 @@
+$font-url: '//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css';
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+* , body {
+  font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'Noto Sans CJK KR', 'Noto Sans KR', 'Source Sans Pro', 'Helvetica Neue', Helvetica, '맑은 고딕', 'Malgun Gothic', '돋움', dotum, Arial, sans-serif;
+}
+
+body {
+  margin-top: 51px;
+}
