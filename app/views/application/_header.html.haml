@@ -1,6 +1,6 @@
 #site-header
   %nav.navbar.navbar-inverse.navbar-fixed-top
-    .container-fluid
+    .container
       .navbar-header
         %button.navbar-toggle.collapsed{"data-target": "#collapsable", "data-toggle": "collapse", type: "button"}
           %span.icon-bar
@@ -9,7 +9,15 @@
         %a.navbar-brand{ href: root_path }
           피플
 
-      .collapse.navbar-collapse
-        %ul.nav.navbar-nav
-          %li
-            %a(href='#') 메뉴
+      #collapsable.collapse.navbar-collapse
+        %ul.nav.navbar-nav.navbar-right
+          - if user_signed_in?
+            %li
+              = link_to "#{current_user.nickname} 프로필", edit_user_registration_path, class: 'item'
+            %li
+              = link_to '로그아웃', sign_out_path, method: :delete, class: 'item'
+          - else
+            %li
+              = link_to new_user_session_path, class: 'item' do
+                로그인 &middot; 가입
+

@@ -1,0 +1,5 @@
+ko:
+  activerecord:
+    attributes:
+      user:
+        nickname: 아이디

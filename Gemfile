@@ -50,6 +50,13 @@ gem 'cancancan', '~> 1.10'
 gem 'devise', '~> 4.2'
 gem 'devise-bootstrap-views'
 gem 'rolify'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-naver'
+gem 'twitter'
+gem 'google-api-client'
 
 # notification
 gem 'postmark-rails', '~> 0.12.0'
